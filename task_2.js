@@ -1,10 +1,12 @@
 function fun(obj){
     for (let key in obj) {
         if (obj.hasOwnProperty(key)) {
-            console.log(key +':'+ obj[key]); 
+            console.log(obj[key]); 
         }   
     }    
 }
+
+
 
 const testPro = {
     d:"protoProperty"
@@ -15,3 +17,4 @@ any.b = "string";
 any.c = 9;
 
 fun(any);
+console.log(any)
